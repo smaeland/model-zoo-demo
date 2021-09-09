@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/model-zoo-demo/css/monokailight-syntax.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    
+    
+    <title>Simula Model Zoo | Julia MNIST Example</title>
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-md navbar-light bg-light py-4">  
+    <div class="container">
+        <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+            <a class="navbar-brand" href="http://smaeland.github.io/model-zoo-demo/">
+                <img src="http://smaeland.github.io/model-zoo-demo/images/simula_main_small_RGB.png " alt="" height="42" class="d-inline-block" style="padding-bottom: 14px;">
+                Model Zoo
+                </a>
+            <ul class="navbar-nav me-auto">
+                <h5 style="margin-right: 4em">BETA</h5>
+                
+                    <li class="nav-item">
+                        <a class="nav-link " href="/model-zoo-demo/"> Home</a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a class="nav-link " href="/model-zoo-demo/categories/"> Categories</a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a class="nav-link " href="/model-zoo-demo/tags/"> Tags</a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a class="nav-link " href="/model-zoo-demo/docs/"> How-to</a>
+                    </li>
+                
+            </ul>
+        </div>
+        
+        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="btn btn-success" href="#">Submit a model</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div id="content">
+
+
+
+
+
+
+<div class='container'>
+    <div class="row mt-5">
+        <h1>Julia MNIST Example</h1>
+            <br>
+            <p class="lead">Example model in Julia / Flux, for classifying handwritten digits in the MNIST dataset.</p>
+        <div class="col-sm-9">
+            
+            <div class="card bg-light">
+                <div class="card-body">
+                    <h5>Download</h5>
+                    <ul class="nav nav-tabs nav-fill " id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#files" type="button" role="tab">Files</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#image" type="button" role="tab">Docker image</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#notebook" type="button" role="tab">Notebook</button>
+                          </li>
+                      </ul>
+                      <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="files" role="tabpanel" aria-labelledby="home-tab">
+                            <br>
+                            <i>If the download does not start automatically, right-click and select "Save Link As..."</i>
+                            <br><br>
+                            
+                                <a class="btn btn-primary" href="https://raw.githubusercontent.com/smaeland/model-zoo-julia-mnist-example/master/Manifest.toml" download><i class="bi bi-arrow-down"></i> Manifest.toml</a>
+                            
+                            
+                                <a class="btn btn-primary" href="https://github.com/smaeland/model-zoo-julia-mnist-example/blob/master/cnn-model.bson?raw=true" download><i class="bi bi-arrow-down"></i> cnn-model.bson</a>
+                            
+                            <br><br>
+                            
+                            <i>Or download using <code>wget</code>:</i>
+                            <br>
+                            <div class="highlight">
+                                <pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">wget https://raw.githubusercontent.com/smaeland/model-zoo-julia-mnist-example/master/Manifest.toml
+wget https://github.com/smaeland/model-zoo-julia-mnist-example/blob/master/cnn-model.bson?raw=true</code></pre>
+
+                            </div>
+                            
+                        </div>
+                        <div class="tab-pane fade" id="image" role="tabpanel">
+                            <br>
+                            
+                            <a class="btn btn-primary disabled" href="#"><i>No image provided</i></a>
+                            
+                        </div>
+                        <div class="tab-pane fade" id="notebook" role="tabpanel">
+                            <br>
+                            
+                            <a class="btn btn btn-primary disabled" href="#"><i>No notebook provided</i></a>
+                            
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <br>
+            <p>This short example shows how to download and use a model written in Julia using
+the Flux framework.</p>
+<h3 id="dependencies">Dependencies</h3>
+<p>Install dependencies using the Julia package manager:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">wget https://raw.githubusercontent.com/smaeland/model-zoo-julia-mnist-example/master/Manifest.toml
+julia   <span class="c1"># press ]</span>
+pkg&gt; activate .
+</code></pre></div><h3 id="download-and-import-the-model">Download and import the model</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">wget https://github.com/smaeland/model-zoo-julia-mnist-example/blob/master/cnn-model.bson?raw=true
+</code></pre></div><p>Start Julia and activate the environment, then</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-julia" data-lang="julia"><span class="k">using</span> <span class="n">Flux</span>
+<span class="k">import</span> <span class="n">BSON</span>
+<span class="n">BSON</span><span class="o">.</span><span class="nd">@load</span> <span class="s">&#34;cnn-model.bson&#34;</span> <span class="n">model</span>
+<span class="n">model</span>
+<span class="c"># Chain(Conv((3, 3), 1=&gt;6, relu), MaxPool((2, 2), pad = (0, 0, 0, 0), stride = (2, 2)), Conv((3, 3), 6=&gt;16, relu), flatten, Dense(1936, 10))</span>
+</code></pre></div><h3 id="load-test-data">Load test data</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-julia" data-lang="julia"><span class="k">import</span> <span class="n">MLDatasets</span>
+<span class="n">x_test</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">MLDatasets</span><span class="o">.</span><span class="n">MNIST</span><span class="o">.</span><span class="n">testdata</span><span class="p">(</span><span class="kt">Float32</span><span class="p">);</span>
+<span class="n">size</span><span class="p">(</span><span class="n">x_test</span><span class="p">)</span>
+<span class="c"># (28, 28, 10000)</span>
+<span class="n">size</span><span class="p">(</span><span class="n">y_test</span><span class="p">)</span>
+<span class="c"># (10000,)</span>
+</code></pre></div><h3 id="preprocessing">Preprocessing</h3>
+<p>Images loaded above already have pixel values in the range [0, 1], but is
+missing the channel axis, so the only required preprocessing step is to add
+that.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-julia" data-lang="julia"><span class="k">function</span> <span class="n">preprocess</span><span class="p">(</span><span class="n">input_data</span><span class="p">)</span>
+    <span class="n">img_size</span> <span class="o">=</span> <span class="n">size</span><span class="p">(</span><span class="n">input_data</span><span class="p">)[</span><span class="mi">1</span><span class="o">:</span><span class="mi">2</span><span class="p">]</span> 
+    <span class="k">return</span> <span class="n">reshape</span><span class="p">(</span><span class="n">input_data</span><span class="p">,</span> <span class="n">img_size</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">img_size</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="mi">1</span><span class="p">,</span> <span class="o">:</span><span class="p">)</span>
+<span class="k">end</span>
+
+<span class="n">x_test</span> <span class="o">=</span> <span class="n">preprocess</span><span class="p">(</span><span class="n">x_test</span><span class="p">);</span>
+</code></pre></div><h3 id="evaluate-the-model">Evaluate the model</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-julia" data-lang="julia"><span class="k">using</span> <span class="n">Flux</span><span class="o">:</span> <span class="n">onehotbatch</span><span class="p">,</span> <span class="n">onecold</span>
+
+<span class="n">preds</span> <span class="o">=</span> <span class="n">model</span><span class="p">(</span><span class="n">x_test</span><span class="p">);</span>
+<span class="n">y_true</span> <span class="o">=</span> <span class="n">onehotbatch</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="mi">0</span><span class="o">:</span><span class="mi">9</span><span class="p">);</span>    <span class="c"># Model outputs one-hot encoded values, so use that for y_true too</span>
+
+<span class="k">function</span> <span class="n">accuracy</span><span class="p">(</span><span class="n">ŷ</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">sum</span><span class="p">(</span><span class="n">onecold</span><span class="p">(</span><span class="n">ŷ</span><span class="p">)</span> <span class="o">.==</span> <span class="n">onecold</span><span class="p">(</span><span class="n">y</span><span class="p">))</span> <span class="o">/</span> <span class="n">size</span><span class="p">(</span><span class="n">y</span><span class="p">)[</span><span class="k">end</span><span class="p">]</span>
+<span class="k">end</span>
+
+<span class="n">acc</span> <span class="o">=</span> <span class="n">accuracy</span><span class="p">(</span><span class="n">preds</span><span class="p">,</span> <span class="n">y_true</span><span class="p">);</span>
+<span class="n">println</span><span class="p">(</span><span class="s">&#34;Accuracy: </span><span class="si">$acc</span><span class="s">&#34;</span><span class="p">)</span>
+</code></pre></div>
+        </div>
+        <div class="col-sm-3">
+            
+
+
+
+
+<div class="card">
+    <div class="card-header">
+        <h5>Metadata</h5>
+    </div>
+    <div class="card-body">
+        <p class="card-text">
+            <span class="bi bi-calendar-date"></span>
+            <time datetime="2021-09-07"> Published Sep 7, 2021</time>
+            <br>
+                <div class="d-grid gap-2">
+                
+                    <a class="btn btn-primary" href="https://github.com/smaeland/model-zoo-julia-mnist-example"><i class="bi bi-code-slash"></i> Code repository</a>
+                
+            </div>
+            <br>
+            <h5>Categories</h5>
+            
+
+
+    <span class="btn btn-sm btn-outline-primary tag-btn"><i class="bi bi-folder"></i> Examples</span>
+
+    <span class="btn btn-sm btn-outline-primary tag-btn"><i class="bi bi-folder"></i> Computer vision</span>
+
+            <br><br>
+            <h5>Tags</h5>
+            
+
+
+    <span class="btn btn-sm btn-outline-success tag-btn"><i class="bi bi-tag"></i> CNN</span>
+
+    <span class="btn btn-sm btn-outline-success tag-btn"><i class="bi bi-tag"></i> MNIST</span>
+
+        </p>
+    </div>
+</div>
+
+
+
+        </div>
+    </div>
+
+
+</div>
+
+
+
+
+        </div>
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/model-zoo-demo/css/monokailight-syntax.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    
+    
+    <title>Simula Model Zoo | Dummy Model</title>
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-md navbar-light bg-light py-4">  
+    <div class="container">
+        <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+            <a class="navbar-brand" href="http://smaeland.github.io/model-zoo-demo/">
+                <img src="http://smaeland.github.io/model-zoo-demo/images/simula_main_small_RGB.png " alt="" height="42" class="d-inline-block" style="padding-bottom: 14px;">
+                Model Zoo
+                </a>
+            <ul class="navbar-nav me-auto">
+                <h5 style="margin-right: 4em">BETA</h5>
+                
+                    <li class="nav-item">
+                        <a class="nav-link " href="/model-zoo-demo/"> Home</a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a class="nav-link " href="/model-zoo-demo/categories/"> Categories</a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a class="nav-link " href="/model-zoo-demo/tags/"> Tags</a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a class="nav-link " href="/model-zoo-demo/docs/"> How-to</a>
+                    </li>
+                
+            </ul>
+        </div>
+        
+        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="btn btn-success" href="#">Submit a model</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div id="content">
+
+
+
+
+
+
+<div class='container'>
+    <div class="row mt-5">
+        <h1>Dummy Model</h1>
+            <br>
+            <p class="lead">Not an actual model, just a template for model descriptions.</p>
+        <div class="col-sm-9">
+            
+            <div class="card bg-light">
+                <div class="card-body">
+                    <h5>Download</h5>
+                    <ul class="nav nav-tabs nav-fill " id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#files" type="button" role="tab">Files</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#image" type="button" role="tab">Docker image</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#notebook" type="button" role="tab">Notebook</button>
+                          </li>
+                      </ul>
+                      <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="files" role="tabpanel" aria-labelledby="home-tab">
+                            <br>
+                            <i>If the download does not start automatically, right-click and select "Save Link As..."</i>
+                            <br><br>
+                            
+                            
+                                <a class="btn btn-primary disabled" href="#" download> <i>No model file provided</i></a>
+                            
+                            <br><br>
+                            
+                        </div>
+                        <div class="tab-pane fade" id="image" role="tabpanel">
+                            <br>
+                            
+                            <a class="btn btn-primary disabled" href="#"><i>No image provided</i></a>
+                            
+                        </div>
+                        <div class="tab-pane fade" id="notebook" role="tabpanel">
+                            <br>
+                            
+                            <a class="btn btn btn-primary disabled" href="#"><i>No notebook provided</i></a>
+                            
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <br>
+            <p>The following categories should be provided when documenting a model:</p>
+<h3 id="dependencies">Dependencies</h3>
+<p>Instructions for how to install dependencies, for example downloading and
+installing from a <code>requirements.txt</code> file (if using <code>pip</code>), a
+<code>environment.yml</code> file (if using <code>conda</code>), or something else.</p>
+<h3 id="download-and-import-the-model">Download and import the model</h3>
+<p>Instructions for loading the model into the relevant framework, which is nice
+to have since it often differs.</p>
+<h3 id="data">Data</h3>
+<p>Please provide some test data that the model can be run over and validated
+against, to ensure things are working. Here one can ideally also describe the
+dataset, and list its expected shape.</p>
+<h3 id="preprocessing">Preprocessing</h3>
+<p>Either in a separate section or in the section above, detail the steps required
+to preprocess the data. Lacking or incorrect preprocessing is guaranteed to
+lead to trouble down the road.</p>
+<h3 id="other">Other</h3>
+<p>Other information can be added where needed; examples and code snippets are
+encouraged.</p>
+
+        </div>
+        <div class="col-sm-3">
+            
+
+
+
+
+<div class="card">
+    <div class="card-header">
+        <h5>Metadata</h5>
+    </div>
+    <div class="card-body">
+        <p class="card-text">
+            <span class="bi bi-calendar-date"></span>
+            <time datetime="2021-09-08"> Published Sep 8, 2021</time>
+            <br>
+                <div class="d-grid gap-2">
+                
+                    <a class="btn btn-primary disabled" ><i class="bi bi-code-slash"></i> No repository linked</a>
+                
+            </div>
+            <br>
+            <h5>Categories</h5>
+            
+
+
+    <span class="btn btn-sm btn-outline-primary tag-btn"><i class="bi bi-folder"></i> Examples</span>
+
+            <br><br>
+            <h5>Tags</h5>
+            
+
+
+    <span class="btn btn-sm btn-outline-success tag-btn"><i class="bi bi-tag"></i> 🤖️</span>
+
+        </p>
+    </div>
+</div>
+
+
+
+        </div>
+    </div>
+
+
+</div>
+
+
+
+
+        </div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Keras on Simula Model Zoo</title>
+    <link>http://smaeland.github.io/model-zoo-demo/tags/keras/</link>
+    <description>Recent content in Keras on Simula Model Zoo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 02 Sep 2021 17:21:30 +0200</lastBuildDate><atom:link href="http://smaeland.github.io/model-zoo-demo/tags/keras/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MNIST Example</title>
+      <link>http://smaeland.github.io/model-zoo-demo/models/mnist-example/</link>
+      <pubDate>Thu, 02 Sep 2021 17:21:30 +0200</pubDate>
+      
+      <guid>http://smaeland.github.io/model-zoo-demo/models/mnist-example/</guid>
+      <description>Example model for classifying handwritten digits in the MNIST dataset.</description>
+    </item>
+    
+  </channel>
+</rss>

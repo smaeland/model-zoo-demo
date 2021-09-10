@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Computer vision on Simula Model Zoo</title>
-    <link>http://smaeland.github.io/model-zoo-demo/categories/computer-vision/</link>
+    <link>https://steffen.maeland.gitlab.io/model.zoo/categories/computer-vision/</link>
     <description>Recent content in Computer vision on Simula Model Zoo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 07 Sep 2021 10:30:56 +0200</lastBuildDate><atom:link href="http://smaeland.github.io/model-zoo-demo/categories/computer-vision/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 07 Sep 2021 10:30:56 +0200</lastBuildDate><atom:link href="https://steffen.maeland.gitlab.io/model.zoo/categories/computer-vision/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Julia MNIST Example</title>
-      <link>http://smaeland.github.io/model-zoo-demo/models/julia-mnist-example/</link>
+      <link>https://steffen.maeland.gitlab.io/model.zoo/models/julia-mnist-example/</link>
       <pubDate>Tue, 07 Sep 2021 10:30:56 +0200</pubDate>
       
-      <guid>http://smaeland.github.io/model-zoo-demo/models/julia-mnist-example/</guid>
+      <guid>https://steffen.maeland.gitlab.io/model.zoo/models/julia-mnist-example/</guid>
       <description>Example model in Julia / Flux, for classifying handwritten digits in the MNIST dataset.</description>
     </item>
     
     <item>
       <title>MNIST Example</title>
-      <link>http://smaeland.github.io/model-zoo-demo/models/mnist-example/</link>
+      <link>https://steffen.maeland.gitlab.io/model.zoo/models/mnist-example/</link>
       <pubDate>Thu, 02 Sep 2021 17:21:30 +0200</pubDate>
       
-      <guid>http://smaeland.github.io/model-zoo-demo/models/mnist-example/</guid>
+      <guid>https://steffen.maeland.gitlab.io/model.zoo/models/mnist-example/</guid>
       <description>Example model for classifying handwritten digits in the MNIST dataset.</description>
     </item>
     

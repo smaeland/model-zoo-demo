@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Fashion-MNIST on Simula Model Zoo</title>
-    <link>https://steffen.maeland.gitlab.io/model.zoo/tags/fashion-mnist/</link>
+    <link>http://smaeland.github.io/model-zoo-demo/tags/fashion-mnist/</link>
     <description>Recent content in Fashion-MNIST on Simula Model Zoo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 08 Sep 2021 15:44:31 +0200</lastBuildDate><atom:link href="https://steffen.maeland.gitlab.io/model.zoo/tags/fashion-mnist/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 08 Sep 2021 15:44:31 +0200</lastBuildDate><atom:link href="http://smaeland.github.io/model-zoo-demo/tags/fashion-mnist/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ONNX Example</title>
-      <link>https://steffen.maeland.gitlab.io/model.zoo/models/onnx-example/</link>
+      <link>http://smaeland.github.io/model-zoo-demo/models/onnx-example/</link>
       <pubDate>Wed, 08 Sep 2021 15:44:31 +0200</pubDate>
       
-      <guid>https://steffen.maeland.gitlab.io/model.zoo/models/onnx-example/</guid>
+      <guid>http://smaeland.github.io/model-zoo-demo/models/onnx-example/</guid>
       <description>Example using ONNX for saving models in a framework-independent format</description>
     </item>
     

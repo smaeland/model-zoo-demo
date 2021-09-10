@@ -2,53 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>My Go Journey on Simula Model Zoo</title>
-    <link>https://steffen.maeland.gitlab.io/model.zoo/</link>
+    <link>http://smaeland.github.io/model-zoo-demo/</link>
     <description>Recent content in My Go Journey on Simula Model Zoo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 23 Mar 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://steffen.maeland.gitlab.io/model.zoo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 23 Mar 2017 00:00:00 +0000</lastBuildDate><atom:link href="http://smaeland.github.io/model-zoo-demo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Dummy Model</title>
-      <link>https://steffen.maeland.gitlab.io/model.zoo/models/dummy-model/</link>
+      <link>http://smaeland.github.io/model-zoo-demo/models/dummy-model/</link>
       <pubDate>Wed, 08 Sep 2021 17:52:42 +0200</pubDate>
       
-      <guid>https://steffen.maeland.gitlab.io/model.zoo/models/dummy-model/</guid>
+      <guid>http://smaeland.github.io/model-zoo-demo/models/dummy-model/</guid>
       <description>Not an actual model, just a template for model descriptions.</description>
     </item>
     
     <item>
       <title>ONNX Example</title>
-      <link>https://steffen.maeland.gitlab.io/model.zoo/models/onnx-example/</link>
+      <link>http://smaeland.github.io/model-zoo-demo/models/onnx-example/</link>
       <pubDate>Wed, 08 Sep 2021 15:44:31 +0200</pubDate>
       
-      <guid>https://steffen.maeland.gitlab.io/model.zoo/models/onnx-example/</guid>
+      <guid>http://smaeland.github.io/model-zoo-demo/models/onnx-example/</guid>
       <description>Example using ONNX for saving models in a framework-independent format</description>
     </item>
     
     <item>
       <title>Julia MNIST Example</title>
-      <link>https://steffen.maeland.gitlab.io/model.zoo/models/julia-mnist-example/</link>
+      <link>http://smaeland.github.io/model-zoo-demo/models/julia-mnist-example/</link>
       <pubDate>Tue, 07 Sep 2021 10:30:56 +0200</pubDate>
       
-      <guid>https://steffen.maeland.gitlab.io/model.zoo/models/julia-mnist-example/</guid>
+      <guid>http://smaeland.github.io/model-zoo-demo/models/julia-mnist-example/</guid>
       <description>Example model in Julia / Flux, for classifying handwritten digits in the MNIST dataset.</description>
     </item>
     
     <item>
       <title>Formats</title>
-      <link>https://steffen.maeland.gitlab.io/model.zoo/docs/formats/</link>
+      <link>http://smaeland.github.io/model-zoo-demo/docs/formats/</link>
       <pubDate>Mon, 06 Sep 2021 16:20:48 +0200</pubDate>
       
-      <guid>https://steffen.maeland.gitlab.io/model.zoo/docs/formats/</guid>
+      <guid>http://smaeland.github.io/model-zoo-demo/docs/formats/</guid>
       <description>Description of formats</description>
     </item>
     
     <item>
       <title>Submit</title>
-      <link>https://steffen.maeland.gitlab.io/model.zoo/docs/submit/</link>
+      <link>http://smaeland.github.io/model-zoo-demo/docs/submit/</link>
       <pubDate>Mon, 06 Sep 2021 15:05:40 +0200</pubDate>
       
-      <guid>https://steffen.maeland.gitlab.io/model.zoo/docs/submit/</guid>
+      <guid>http://smaeland.github.io/model-zoo-demo/docs/submit/</guid>
       <description>Her we discuss submissions
 Here is some code:
 ls docs </description>
@@ -56,19 +56,19 @@ ls docs </description>
     
     <item>
       <title>Usage</title>
-      <link>https://steffen.maeland.gitlab.io/model.zoo/docs/usage/</link>
+      <link>http://smaeland.github.io/model-zoo-demo/docs/usage/</link>
       <pubDate>Mon, 06 Sep 2021 14:25:28 +0200</pubDate>
       
-      <guid>https://steffen.maeland.gitlab.io/model.zoo/docs/usage/</guid>
+      <guid>http://smaeland.github.io/model-zoo-demo/docs/usage/</guid>
       <description>Here we discuss how to use the models</description>
     </item>
     
     <item>
       <title>MNIST Example</title>
-      <link>https://steffen.maeland.gitlab.io/model.zoo/models/mnist-example/</link>
+      <link>http://smaeland.github.io/model-zoo-demo/models/mnist-example/</link>
       <pubDate>Thu, 02 Sep 2021 17:21:30 +0200</pubDate>
       
-      <guid>https://steffen.maeland.gitlab.io/model.zoo/models/mnist-example/</guid>
+      <guid>http://smaeland.github.io/model-zoo-demo/models/mnist-example/</guid>
       <description>Example model for classifying handwritten digits in the MNIST dataset.</description>
     </item>
     

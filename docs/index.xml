@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Simula Model Zoo</title>
-    <link>https://steffen.maeland.gitlab.io/model.zoo/docs/</link>
+    <link>http://smaeland.github.io/model-zoo-demo/docs/</link>
     <description>Recent content on Simula Model Zoo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 06 Sep 2021 16:20:48 +0200</lastBuildDate><atom:link href="https://steffen.maeland.gitlab.io/model.zoo/docs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 06 Sep 2021 16:20:48 +0200</lastBuildDate><atom:link href="http://smaeland.github.io/model-zoo-demo/docs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Formats</title>
-      <link>https://steffen.maeland.gitlab.io/model.zoo/docs/formats/</link>
+      <link>http://smaeland.github.io/model-zoo-demo/docs/formats/</link>
       <pubDate>Mon, 06 Sep 2021 16:20:48 +0200</pubDate>
       
-      <guid>https://steffen.maeland.gitlab.io/model.zoo/docs/formats/</guid>
+      <guid>http://smaeland.github.io/model-zoo-demo/docs/formats/</guid>
       <description>Description of formats</description>
     </item>
     
     <item>
       <title>Submit</title>
-      <link>https://steffen.maeland.gitlab.io/model.zoo/docs/submit/</link>
+      <link>http://smaeland.github.io/model-zoo-demo/docs/submit/</link>
       <pubDate>Mon, 06 Sep 2021 15:05:40 +0200</pubDate>
       
-      <guid>https://steffen.maeland.gitlab.io/model.zoo/docs/submit/</guid>
+      <guid>http://smaeland.github.io/model-zoo-demo/docs/submit/</guid>
       <description>Her we discuss submissions
 Here is some code:
 ls docs </description>
@@ -29,10 +29,10 @@ ls docs </description>
     
     <item>
       <title>Usage</title>
-      <link>https://steffen.maeland.gitlab.io/model.zoo/docs/usage/</link>
+      <link>http://smaeland.github.io/model-zoo-demo/docs/usage/</link>
       <pubDate>Mon, 06 Sep 2021 14:25:28 +0200</pubDate>
       
-      <guid>https://steffen.maeland.gitlab.io/model.zoo/docs/usage/</guid>
+      <guid>http://smaeland.github.io/model-zoo-demo/docs/usage/</guid>
       <description>Here we discuss how to use the models</description>
     </item>
     
